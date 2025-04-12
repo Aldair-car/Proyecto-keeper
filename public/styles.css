@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background: #000000; /* Negro */
+  background: #ffffff; /* Blanco */
   padding: 0 16px;
 }
 
@@ -21,7 +21,7 @@ header {
 }
 
 header h1 {
-  color: #000000; /* Texto negro */
+  color: #ffffff; /* Blanco */
   font-family: "McLaren", cursive;
   font-weight: 200;
 }
@@ -39,7 +39,7 @@ footer p {
 }
 
 .note {
-  background: #FFFACD; /* Amarillo claro */
+  background: #fff9c4; /* Amarillo muy claro */
   border-radius: 7px;
   box-shadow: 0 2px 5px rgba(255, 215, 0, 0.3); /* Sombra amarilla suave */
   padding: 10px;
@@ -59,22 +59,22 @@ footer p {
   margin-bottom: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
-  color: #333333; /* Gris oscuro para buena legibilidad */
+  color: #333333; /* Gris oscuro */
 }
 
 .note button {
-  background: #FFFFE0; /* Amarillo muy claro */
+  background: #fffde7; /* Amarillo pálido */
   position: relative;
   float: right;
   margin-right: 20px;
-  color: #000000; /* Negro */
+  color: #FFD700; /* Amarillo */
   border: none;
   width: 36px;
   height: 36px;
   cursor: pointer;
   outline: none;
   border-radius: 50%;
-  box-shadow: 0 0 4px rgba(255, 215, 0, 0.3); /* Sombra amarilla */
+  box-shadow: 0 0 4px rgba(255, 215, 0, 0.3);
 }
 
 form {
@@ -84,7 +84,7 @@ form {
   background: #ffffff;
   padding: 15px;
   border-radius: 7px;
-  box-shadow: 0 1px 5px rgba(255, 215, 0, 0.3); /* Sombra amarilla suave */
+  box-shadow: 0 1px 5px rgba(255, 215, 0, 0.3);
 }
 
 form input,
@@ -104,7 +104,7 @@ form button {
   right: 18px;
   bottom: -18px;
   background: #FFD700; /* Amarillo */
-  color: #000000; /* Negro */
+  color: #ffffff; /* Blanco */
   border: none;
   border-radius: 50%;
   width: 36px;
