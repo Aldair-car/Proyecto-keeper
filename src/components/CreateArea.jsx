@@ -1,36 +1,47 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
-function CreateArea(props) {
-    const [note,setNote] = useState({
-        title:"",
-        content:""
-    });
+function CrearArea(props) {
+  const [nota, setNota] = useState({
+    title: "",
+    content: "",
+  });
 
-   function handleChange(event){
-    const {name, value}=event.target;
-    setNote((prevVal)=>{
-        return {
-            ...prevVal,
-            [name]: value
-        }
-    });
-   }
+  function manejarCambio(evento) {
+    const { name, value } = evento.target;
+    setNota((prevNota) => ({
+      ...prevNota,
+      [name]: value,
+    }));
+  }
 
-   function submitNote(event){
-    props.onAdd(note);
-    setNote({ title:"", content: ""});
-    event.preventDefault();
-   }
+  function enviarNota(evento) {
+    evento.preventDefault();
+    if (nota.title.trim() || nota.content.trim()) {
+      props.onAdd(nota);
+      setNota({ title: "", content: "" });
+    }
+  }
 
   return (
     <div>
       <form>
-        <input onChange={handleChange} name="title" placeholder="Title" value={note.title} />
-        <textarea onChange={handleChange} name="content" placeholder="Take a note..." rows="3" value={note.content}/>
-        <button onClick={submitNote}>Add</button>
+        <input
+          name="title"
+          onChange={manejarCambio}
+          value={nota.title}
+          placeholder="Escribe el titulo de la nota"
+        />
+        <textarea
+          name="content"
+          onChange={manejarCambio}
+          value={nota.content}
+          placeholder="Escribe el contenido de la nota"
+          rows="3"
+        />
+        <button onClick={enviarNota}>+</button>
       </form>
     </div>
   );
 }
 
-export default CreateArea;
+export default CrearArea;
