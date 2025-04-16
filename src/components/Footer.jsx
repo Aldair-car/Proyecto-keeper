@@ -1,12 +1,13 @@
 import React from "react";
 
-const date = new Date().getFullYear();
-function footer() {
+const year = new Date().getFullYear();
+
+function PieDePagina() {
   return (
     <footer>
-      <p>&copy; Keeper {date}</p>
+      <p>&copy; Keeper {year}</p>
     </footer>
   );
 }
 
-export default footer;
+export default PieDePagina;
