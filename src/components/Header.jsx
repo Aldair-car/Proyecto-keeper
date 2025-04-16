@@ -1,6 +1,6 @@
 import React from "react";
 
-function Header() {
+function Encabezado() {
   return (
     <header>
       <h1>Keeper</h1>
@@ -8,4 +8,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Encabezado;
